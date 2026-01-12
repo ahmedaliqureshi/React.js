@@ -1,0 +1,24 @@
+JSX vs React:- 
+
+React.createElement is verbose 
+
+JSX makes code easier to write and understand 
+
+eg:- 
+
+const heading = <h1>hello form react </h1>
+
+bundlers:- you're shipping department 
+
+a bundlers takes all you're source assests and ouputs an optimised bundle
+that browsers can download. 
+
+typical pipeline:- 
+
+1) read every import/require.
+2) transpile (JSX->JS, TS->JS). 
+3) concatenate/code-split. 
+4) minify and tree-shake unused code. 
+5) generate hashed filenames for long-terms caching. 
+6) serve with HMR (hot module replacement) during development. 
+

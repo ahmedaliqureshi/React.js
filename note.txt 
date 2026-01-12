@@ -1,0 +1,69 @@
+what is react:- 
+
+React is a JS library, used to build user interfaces, especially single-page application (SPAs); 
+
+why react exists:- 
+
+traditional JS, manually update DOM, messy event handling hard to scale. 
+
+1) UI is broken into componenents. 
+2) UI updtes automatically when data changes. 
+3) much easier to reason abou complex apps. 
+
+
+History of react:- 
+
+origin:- 
+
+2011:- created at facbook by jordan walke 
+2012:- used interanlly in facebook news feed. 
+2013:- open-sourced at JSConf US/ 
+-> JSX(HTMl in JS) was intially coontroversial. 
+
+2014:- used in instagram.com 
+2015:- react native announced (react to mobile); 
+2016:- create react app lauched for boostrapping react apps. 
+
+
+2019:- jooks introduced in react 16.8, revolutionaizing state management in functional componenets. 
+today:- react powers facbook, instagram, netflix, airbnb, and more. 
+it's also the core of Next.js, the most popular full stack react fraework. 
+
+
+Virtual DOM:- 
+
+1) lightweight JS object representing the UI; 
+2) sotreed in mempry is JS objects. 
+3) very fast to update. 
+4) used with react (react.createElement of JSX).
+5) what is it, a virtual copy of teh real DOM kept in memeory. 
+
+eg:
+
+{
+    type:'h1', 
+    props:{
+        chidlrent:"hello World"
+    }
+}
+
+
+
+summary
+
+featured           V-DOM         R-DOM
+
+speed              fast           slow 
+
+storage            in memeory     browser
+
+update            smart diffing  full re0render
+
+manupulation       react logic     browser API 
+
+
+
+
+
+
+

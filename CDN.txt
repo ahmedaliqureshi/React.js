@@ -1,0 +1,38 @@
+CDN:- 
+
+content delivery network. 
+
+network of global servers that deliver content faster. 
+
+
+benefits:- 
+
+1) fast load times
+
+2) reduced server load
+
+3) better availability.
+
+why react called react:- 
+
+react to data changes by updating UI efficiently using virtual DOM 
+
+
+REACT vs REACTDOM 
+
+react= core logic (components, hooks,state)
+
+reactdom = connects react with the actual DOM.
+
+file           pupose      minifies     warnings 
+
+development    DEV mode      no           yes 
+
+production      livemode      yes          no 
+
+
+remember:- 
+
+react element is an object not html
+
+react only runs inside the root element

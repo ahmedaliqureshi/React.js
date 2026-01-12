@@ -1,0 +1,17 @@
+library:- 
+
+you use only what you want. 
+
+you control the flow. 
+
+eg:- react, loadash, jQurey, axios
+
+
+framework:- 
+
+structure is defined 
+
+you follow the rules 
+
+eg:- angular, express, django.
+

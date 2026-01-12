@@ -1,0 +1,36 @@
+budler               highlights 
+webpack              the mosst flexible and battel tested, large plugin ecosystem. 
+
+vite                 next-gen, instant dev server bia native ES modules, uses rollup for production, recommended now 
+that react create is dead. 
+
+parcel            zero-config,smart defaults, blazing-fast thoanks to C++ core 
+
+
+dependencies vs dev dependencies 
+
+
+purpose                       install             stored under 
+
+runtime/production            npm isntall axios         dependencies
+
+tooling needed only while     npm install -D eslint         devDependecies
+developing               
+
+
+
+Removing uninstall <package-name>
+
+
+
+version ranges: ^ vs ~
+
+symbol              alllows updates to                 example "react": "17.0."
+
+^ caret             minor and patch versions               17.0.2, 17.1.0............but not 18.0.0
+
+~ tilde              patch versions only                    17.0.2,17.0.9......but not 17.1.0
+
+
+
+caret is for most libraries, switch to tilde when you lock down to patch level update 
