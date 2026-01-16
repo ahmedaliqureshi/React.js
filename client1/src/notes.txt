@@ -1,0 +1,89 @@
+why react:- 
+
+1)better reuseability. 
+2)large-scale performance in production. 
+3)clean separation of concerns via components 
+4) essier maintaenenace and testing. 
+
+folder structure:- 
+
+src/ 
+componenets/ 
+pages/ 
+utils/
+
+.jsx vs .js which one for components
+
+1) use .jsx  for files containing JSX
+
+const MyComponent = () => {
+    return <h1>hello,JSX</h2>;
+};
+export default MyComponenet; 
+
+pros for .jsx:- 
+
+clarity, indicated the presence of JSX. 
+better editor support.
+matches community convention. 
+
+2) you can use .js,when
+
+cons
+
+misleading for JSX-containing files. 
+may confuses older tooling. 
+less expressive in files lists. 
+
+best practice:- 
+
+use .jsx for componenets. 
+use .js for utilites, config, and non-jsx logic. 
+
+3) Importing files in react
+
+import header from "./componenets/Header.jsx"
+
+4) constants&static data:- 
+
+4.1) don't keep large static data or hardcoded strings inside componenets. 
+
+4.2) instaed, extract to utils
+
+export const CDN_LINK="https://cdnlinks.com"; 
+export const URL= "https://suhail.app"'
+
+
+cpmst data= [{
+    //complete large data set
+}
+];
+
+export degault data;
+
+
+5)export Tips:- 
+
+5.1) Named export:- 
+
+export const CDN_LINKS="https://cdnlinks.com";
+
+import {CDN_LINKS,URL} from  "../utils/constants"; 
+
+5.2)default export:- 
+
+export default data; 
+
+import data from "../utils/mackdata";
+
+Files guidelines:- 
+
+1) avoid fiels longer than 100 lines. 
+
+2) if you exceed that, refactor into smaller components or files . 
+
+3) follow the above steps to keep you're react project clean, scalable, and production-rreaduy.
+
+
+
+
