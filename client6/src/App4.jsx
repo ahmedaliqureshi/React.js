@@ -1,25 +1,19 @@
-/*
-why:- a constent fucntion which has the constent objects 
-where:- before the app funciton. 
-what;- it is taking the vlaues of person, and styling it and passing to app fucntion
-constraint;- in return, we need to pass doubel curly brackets, as the the react is implemented of JS and HTML
- */
-import Person from "./Person.jsx"
-const App = () =>{  
+const App=()=>{
     return(
-        // calling the person fucntion and passing the values of the varibles as they are
-        /* the attributes of the objects should be declared as they are declared in in the above creation of object */
-        <>
-        <Person  
-        name="AAQ"
-        gmail="AAQ@gmail.com"
-        phoneno="223344"/>
-        <Person
-        name="IBBU"
-        gamil="ibbu@gamil.com"
-        phoneno="321456"/>
-        </>
-
+    <div>
+    <button className="cursor-pointer border-2 border-green-600 text-green-500 px-8 py-2 m-5 rounded-md">
+        first
+    </button>
+    <button className="cursor-pointer bg-blue-400 border-blue-600 text-white-500 px-20 py-2 m-5 rounded-md">
+        second
+    </button>
+    <button className="cursor-pointer bg-red-400 text-red-100 px-10 py-2 m-5 rounded-full">
+        third
+    </button>
+    <button className="cursor-pointer bg-stone-400 text-white px-10 py-2 m-5 rounded-md hover:bg-stone-200 text-black">
+        fourth
+    </button>
+    </div>
     )
 }
 export default App
