@@ -2,7 +2,7 @@ const Home=()=>{
     return(
         <div className="bg-[#000000] h-screen flex flex-col justify-center items-center">
         <div className="mb-13 flex flex-col justify-center items-center">
-               <span className="text-white text-7xl mb-8">
+               <span className="text-white text-7xl mb-9 font-medium">
                 Google
                </span>
                <div className="text-white flex items-center w-[600px]  px-4 py-2 shadow-md rounded-full bg-white ">
