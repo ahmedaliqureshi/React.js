@@ -1,6 +1,8 @@
-const Two=()=>{
+const Two=({handleClick,isOrange})=>{
     return(
-        <div className=" flex justify-center items-center bg-red-700 text-white cursor-pointer hover:bg-red-400  px-10 py-3 rounded-full"> 
+        <div  onClick={handleClick} 
+        className={`flex justify-center items-center text-white px-10 py-3 rounded-full cursor-pointer 
+        ${isOrange ? "bg-orange-400" : "bg-red-500"}`}>
             two
         </div>
     )

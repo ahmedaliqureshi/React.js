@@ -6,6 +6,8 @@ import { useState } from "react";
 
 const App=()=>{
   const [message,setMessage]= useState(false);
+  const [color,setcolor]=useState(false); 
+  const [icon,setIcon]=useState(false)
   return(
     <div>
       <div className="flex flex-col justify-center items-center h-screen gap-6">
@@ -23,12 +25,17 @@ const App=()=>{
         <div className=" p-5 bg-red-100 rounded-3xl">
         <Two 
         handleClick={()=>{
-          
-          
-        }}/>
+          setcolor(!color);
+        }} isOrange={color}/>
         </div>
         <div className=" p-5 bg-green-100 rounded-3xl">
-        <Three/>
+          <div className="text-3xl text-green-700 flex justify-center mb-2">
+          { icon && <i className="ri-emotion-happy-line"></i>}
+          </div>
+        <Three
+        handleClick={()=>{
+          setIcon(!icon);
+        }}/>
         </div>
       </div>
     </div>
