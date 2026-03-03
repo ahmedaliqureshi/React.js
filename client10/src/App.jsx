@@ -1,6 +1,11 @@
-import Search from "../src/Search";
-import Phone from "../src/Phone"
-import Categories from "../src/Categories";
+import Search from "../src/Search.jsx";
+import Phone from "../src/Phone.jsx"
+import Macbook from "../src/Macbook.jsx";
+import Pad from "../src/Pad.jsx";
+import Mac from "../src/Mac.jsx";
+import Watch from "../src/Watch.jsx";
+import Airpod from "../src/Airpod.jsx";
+import Appletv from "../src/Appletv.jsx";
 import Applebg2 from "../src/assets/Applebg2.png";
 
 const App=()=>{
@@ -63,9 +68,12 @@ const App=()=>{
             <div className="flex justify-center items-center mb-45">
             <Search/>
             </div>
+
             {/* The box that contian all the products */}
-            <div className="border-3 border-white/30 ml-4 mr-1 h-screen mt-15 flex justify-between">
-               <div className="border-4 m-2 w-70 flex justify-center items-center
+            <div className="border-3 border-white/30 ml-4 mr-1 h-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mx-auto">
+
+            {/*phone block */}
+               <div className="border-4 m-2 
                border border-white/20
                shadow-2xl
                rounded-md
@@ -73,12 +81,17 @@ const App=()=>{
                hover:backdrop-blur-sm 
                hover:text-white transition-colors duration-200
                bg-gradient-to-b from-white/10 to-transparent">
-                  <div className="flex justify-center items-center border-2 w-50 ">
+                  <div className="flex justify-center items-center mr-2 ml-2 h-77 mt-30 mb-24">
                    <Phone/>
                   </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">iPhone 16 Pro</h2>
+                            <p className="text-white text-sm">Magicotronic</p>
+                        </div>
                </div>
-
-               <div className="border-4 m-2 w-70  
+               
+               {/*Macbook block*/}
+               <div className="border-4 m-2  
                border border-white/20
                shadow-2xl
                rounded-md
@@ -86,10 +99,17 @@ const App=()=>{
                hover:backdrop-blur-sm 
                hover:text-white transition-colors duration-200
                bg-gradient-to-b from-white/10 to-transparent ">
-
+                <div className="flex justify-center items-center mr-2 ml-2 mt-30 mb-28">
+                   <Macbook/>
+                  </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">Macbook Pro 14 </h2>
+                            <p className="text-white text-sm">Powered by M5 chips</p>
+                        </div>
                </div>
-
-               <div className="border-4 m-2 w-70
+               
+               {/*Mac block */}
+               <div className="border-4 m-2 w-full
                border border-white/20
                shadow-2xl
                rounded-md
@@ -97,9 +117,68 @@ const App=()=>{
                hover:backdrop-blur-sm 
                hover:text-white transition-colors duration-200
                bg-gradient-to-b from-white/10 to-transparent">
-
+                <div className="flex justify-center items-center mr-2 ml-2 mt-30 mb-65">
+                   <Mac/>
+                  </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">Mac studio </h2>
+                            <p className="text-white text-sm">Powered by M4</p>
+                        </div>
                </div>
-               
+                
+                {/*ipad block */}
+               <div className="border-4 m-2 w-full
+               border border-white/20
+               shadow-2xl
+               rounded-md
+               cursor-pointer
+               hover:backdrop-blur-sm 
+               hover:text-white transition-colors duration-200
+               bg-gradient-to-b from-white/10 to-transparent">
+                <div className="flex justify-center items-center mr-2 ml-2 mt-20 mb-40">
+                   <Pad/>
+                  </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">iPad Pro</h2>
+                            <p className="text-white text-sm">Supercharged with M4 chips</p>
+                        </div>
+               </div>
+                
+                {/*Watch block */}
+               <div className="border-4 m-2 w-full
+               border border-white/20
+               shadow-2xl
+               rounded-md
+               cursor-pointer
+               hover:backdrop-blur-sm 
+               hover:text-white transition-colors duration-200
+               bg-gradient-to-b from-white/10 to-transparent">
+                 <div className="flex justify-center items-center mr-2 ml-2 mt-40 mb-95">
+                   <Watch/>
+                  </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">Apple watches</h2>
+                            <p className="text-white text-sm">The ultimate watch for healthy life</p>
+                        </div>
+               </div>
+
+               {/*Airpods block */}
+               <div className="border-4 m-2 w-full
+               border border-white/20
+               shadow-2xl
+               rounded-md
+               cursor-pointer
+               hover:backdrop-blur-sm 
+               hover:text-white transition-colors duration-200
+               bg-gradient-to-b from-white/10 to-transparent">
+                 <div className="flex justify-center items-center border- mr-2 ml-2 mt-40 mb-55">
+                   <Airpod/>
+                  </div>
+                   <div className="text-center">
+                            <h2 className="text-white text-xl font-semibold mb-2">AirPod Pro 2 </h2>
+                            <p className="text-white text-sm">with active noise cancellation</p>
+                        </div>
+               </div>
             </div>
         </div>
     )

@@ -1,14 +1,14 @@
-import Phones from "../src/assets/Phone.png"
+import Pad from "../src/assets/Ipad.png"
 
-const Phone=()=>{
+const Ipad=()=>{
     return(
       <div className="bg-transparent">
                      <img
-                     src={Phones} 
+                     src={Pad} 
                      alt="Phone"
                   />
        </div>
     )
 }
 
-export default Phone;
+export default Ipad;

@@ -14,7 +14,7 @@ const Search=()=>{
         hover:text-white transition-colors duration-200
         bg-gradient-to-b from-white/10 to-transparent ">
             <div className="gap-3 flex-1  px-2">
-              <i class="ri-search-line border rounded-full px-1 py-1"></i> search for the product
+              <i className="ri-search-line border rounded-full px-1 py-1"></i> search for the product
             </div>
         </div>
     )
