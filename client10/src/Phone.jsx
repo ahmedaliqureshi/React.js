@@ -1,13 +1,13 @@
-import Iphone from "../src/assets/Iphones.png"
+import Phones from "../src/assets/Phone.jpg"
 
 const Phone=()=>{
     return(
-      <div className="w-full h-screen">
+      <div className="bg-transparent">
                      <img
-                     src={Iphone} 
-                     alt="Iphones"
-                     className="w-full h-full object-cover"/>
-                 </div>
+                     src={Phones} 
+                     alt="Phones"
+                  />
+       </div>
     )
 }
 
