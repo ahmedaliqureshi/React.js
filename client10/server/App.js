@@ -24,7 +24,7 @@ const app=express(); //using all the express feature and storing into a varibale
  * what:-using the import keyword
  */
 
-
+import router from "../server/controllers/index.js"
 
 /*
 Note:- Make sure to write the DB connection file before hand.
@@ -60,7 +60,13 @@ app.get("/",(req,res)=>{
         console.log(error.message); 
         res.status(500).json({msg:error}) //500 are http request family category which shows the server is not reciving any data from clietnside
     }
-})
+});
+
+/**
+ * 
+ */
+
+app.use("/user",router);
 
 /**
  * why:- this will listen to requets being send and recive

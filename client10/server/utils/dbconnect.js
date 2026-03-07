@@ -40,10 +40,12 @@ async function dbconnect(){
     try{
         const URI=process.env.DBURI;
         await mongoose.connect(URI);
+        console.log("DB got connected")
     }
     catch(error){
-       console.log(error);
+       console.log(error.name);
        console.log(error.message); //helps in readiblity of the error
+       res.status(500).message({msg:"DB did not connect"})    
     }
 }
 
